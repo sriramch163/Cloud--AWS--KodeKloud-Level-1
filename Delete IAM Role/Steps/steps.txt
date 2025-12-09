@@ -1,0 +1,99 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow these steps in the AWS Management Console:
+
+✅ STEP 1 — Log In to AWS Console
+
+Use:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Open IAM Service
+
+In the AWS search bar, type IAM
+
+Click IAM to open the IAM Dashboard
+
+✅ STEP 3 — Go to Roles
+
+Left-side navigation:
+
+Access management → Roles
+
+✅ STEP 4 — Search for the Role
+
+In the search bar, type:
+
+iamrole_javed
+
+
+Click the role name.
+
+⚠️ IMPORTANT BEFORE DELETION
+
+AWS does not allow deleting a role if:
+
+It has IAM policies attached
+
+It is associated with an instance profile
+
+It is being used by a service
+
+So follow these checks:
+
+A) Detach Any Policies
+
+In the role details page, go to the Permissions tab
+
+For each attached policy → click:
+
+Detach policy
+
+B) Remove Instance Profile (if present)
+
+If you see an “Instance profile” listed:
+
+Go to the Trust relationships or Role usage section
+
+Remove the instance profile by clicking Remove
+
+(If none exist, skip this step.)
+
+✅ STEP 5 — Delete the Role
+
+Once the role has no policies and no instance profile:
+
+At the top-right, click:
+
+Delete
+
+
+Confirm the deletion in the popup.
+
+📝 STEP 6 — Verify Deletion
+
+Go back to:
+
+IAM → Roles
+
+
+Search for:
+
+iamrole_javed
+
+
+It should no longer appear in the list.
+
+✔️ Task Completed When
+
+IAM role iamrole_javed no longer exists
+
+All policies were removed before deletion
+
+No instance profiles remained linked
