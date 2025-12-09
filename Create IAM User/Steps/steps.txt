@@ -1,0 +1,60 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow these steps in the AWS Management Console:
+
+✅ STEP 1 — Log In to AWS Console
+
+Use:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Open IAM Service
+
+In the AWS search bar, type IAM
+
+Click IAM to open the IAM dashboard
+
+✅ STEP 3 — Go to Users
+
+In the left menu:
+
+Access management → Users
+
+✅ STEP 4 — Create a New IAM User
+
+Click the Create user button
+
+In the User name field, enter:
+
+iamuser_mark
+
+
+Scroll down and click Next (No permissions required unless specified)
+
+Skip permissions → click Next
+
+Skip tags → click Next
+
+Click Create user
+
+✅ STEP 5 — Verify the User Creation
+
+After creation, you should see:
+
+User: iamuser_mark
+Status: Created successfully
+
+
+You can also confirm by checking the IAM users list.
+
+✔️ Task Completed When
+
+IAM user iamuser_mark appears in the IAM → Users list
+
+User was created without errors
