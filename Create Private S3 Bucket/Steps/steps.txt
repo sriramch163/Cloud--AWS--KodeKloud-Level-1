@@ -1,0 +1,88 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow these steps in the AWS Management Console:
+
+✅ STEP 1 — Log In to AWS Console
+
+Use:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Open S3 Service
+
+In the AWS search bar → type S3
+
+Click S3 to open the S3 console
+
+✅ STEP 3 — Create a New Bucket
+
+Click the Create bucket button
+
+✅ STEP 4 — Configure Bucket Settings
+A) Bucket Name
+
+Enter:
+
+xfusion-s3-26630
+
+B) Region
+
+Select:
+
+us-east-1 (N. Virginia)
+
+C) Block All Public Access
+
+Make sure the following options remain ON (checked):
+
+✔ Block all public access
+✔ Block public ACLs
+✔ Block public bucket policies
+✔ Block public access via new public ACLs and policy settings
+
+This ensures the bucket is fully private.
+
+If AWS asks for acknowledgment when blocking public access, check the box to confirm.
+
+D) Leave All Other Settings Default
+
+No versioning, tags, encryption, or advanced settings are required unless specified.
+
+✅ STEP 5 — Create Bucket
+
+Scroll down and click:
+
+Create bucket
+
+📝 STEP 6 — Verify Bucket Creation
+
+On the bucket list page, confirm:
+
+Bucket name appears: xfusion-s3-26630
+
+Access field shows: Bucket and objects not public
+
+To double-check:
+
+Click the bucket name
+
+Go to Permissions tab
+
+You should see:
+
+Block all public access: ON
+Public access status: Not public
+
+✔️ Task Completed When
+
+S3 bucket xfusion-s3-26630 exists
+
+All public access is blocked
+
+Bucket is private
