@@ -1,0 +1,93 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow these steps carefully in the AWS Management Console:
+
+✅ STEP 1 — Log In to the AWS Console
+
+Use:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Open IAM Service
+
+In the AWS search bar, type IAM
+
+Click IAM to open the IAM Dashboard
+
+✅ STEP 3 — Start Creating a New Role
+
+From the left menu:
+
+Access management → Roles
+
+
+Click the Create role button.
+
+✅ STEP 4 — Configure Trusted Entity Type
+
+Under Trusted entity type, select:
+
+✔ AWS Service
+
+Under Use cases for other AWS services, choose:
+
+✔ EC2
+
+Click Next.
+
+✅ STEP 5 — Attach the Existing Policy
+
+On the permissions page:
+
+In the search box, type:
+
+iampolicy_ravi
+
+
+Check the box next to the policy.
+
+Click Next.
+
+✅ STEP 6 — Name the Role
+
+On the "Name, review, and create" screen:
+
+Role name: iamrole_ravi
+
+(Optional) Add a description such as:
+
+Role for EC2 to assume permissions as defined by iampolicy_ravi
+
+
+Click Create role.
+
+✅ STEP 7 — Verify the Role Creation
+
+After creation:
+
+You should be redirected to the Roles list.
+
+Search for:
+
+iamrole_ravi
+
+
+Click the role and confirm:
+
+Trusted entity = ec2.amazonaws.com
+
+Attached policy = iampolicy_ravi
+
+✔️ Task Completed When
+
+IAM role named iamrole_ravi exists
+
+Trusted entity = AWS Service → EC2
+
+Policy iampolicy_ravi is attached
