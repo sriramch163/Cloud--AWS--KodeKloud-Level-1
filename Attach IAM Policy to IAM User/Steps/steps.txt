@@ -1,0 +1,68 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow the steps below:
+
+✅ STEP 1 — Log In to AWS Console
+
+Use:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Open IAM Service
+
+In the AWS search bar, type IAM
+
+Click IAM → opens IAM Dashboard
+
+✅ STEP 3 — Go to Users
+
+From the left-side IAM navigation menu:
+
+Access management → Users
+
+✅ STEP 4 — Select the User
+
+Click on the user:
+
+iamuser_john
+
+
+This opens the user details page.
+
+✅ STEP 5 — Add Permissions (Attach Policy)
+
+Go to the Permissions tab
+
+Click:
+
+Add permissions → Attach policies directly
+
+
+In the search bar, type:
+
+iampolicy_john
+
+
+Check the box next to the policy.
+
+Click Next
+
+Click Add permissions
+
+✅ STEP 6 — Verify the Policy Attachment
+
+Under Permissions → Permissions policies, you should see:
+
+iampolicy_john   (attached)
+
+✔️ Task Completed When
+
+The policy iampolicy_john appears under the user’s permissions list
+
+Status confirms the policy is attached successfully
