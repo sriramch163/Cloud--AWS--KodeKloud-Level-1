@@ -1,0 +1,84 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow these steps in the AWS Management Console:
+
+✅ STEP 1 — Log In to AWS Console
+
+Use the provided:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Go to EC2 Dashboard
+
+In the AWS search bar, type EC2
+
+Click EC2 to open the dashboard
+
+✅ STEP 3 — Select the EC2 Instance
+
+In the left menu, click Instances → Instances
+
+Find and select the instance:
+
+name: nautilus-ec2
+
+✅ STEP 4 — Create the AMI
+
+With the instance selected, click:
+
+Actions → Image and templates → Create image
+
+
+A popup window will appear — fill it as follows:
+
+Image name: nautilus-ec2-ami
+
+Image description: (optional)
+
+Leave defaults for:
+
+No reboot (unchecked unless instructed)
+
+AMI settings
+
+Click Create image
+
+You will get a confirmation message containing the AMI ID.
+
+✅ STEP 5 — Verify the AMI Status
+
+In the left menu, click:
+
+Images → AMIs
+
+
+Look for the AMI named:
+
+nautilus-ec2-ami
+
+
+Check the Status column — it first shows:
+
+pending
+
+
+After a few minutes, it must reach:
+
+available
+
+
+This completes the task.
+
+✔️ Task Completed When
+
+The AMI appears in the AMIs list
+
+AMI name = nautilus-ec2-ami
+
+AMI status = available
