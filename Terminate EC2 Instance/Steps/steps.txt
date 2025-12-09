@@ -1,0 +1,66 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow these steps in the AWS Management Console:
+
+✅ STEP 1 — Log In to AWS Console
+
+Use:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Go to EC2 Dashboard
+
+Search EC2 in the AWS search bar.
+
+Click EC2 to open the dashboard.
+
+✅ STEP 3 — Locate the Instance
+
+In the left menu, click:
+
+Instances → Instances
+
+
+Find the instance:
+
+nautilus-ec2
+
+
+Select the checkbox next to it.
+
+✅ STEP 4 — Terminate the Instance
+
+With the instance selected, click:
+
+Instance state → Terminate instance
+
+
+A confirmation popup appears — click Terminate.
+
+✅ STEP 5 — Verify the Termination Status
+
+After initiating termination:
+
+The instance state will change from:
+
+shutting-down → terminated
+
+
+Refresh or wait for a minute until the final state shows:
+
+terminated
+
+
+Once terminated, the instance cannot be started again.
+
+✔️ Task Completed When
+
+The instance nautilus-ec2 is no longer running.
+
+Its State shows: terminated.
