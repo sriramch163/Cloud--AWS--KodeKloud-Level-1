@@ -1,0 +1,81 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow the steps below in the AWS Management Console:
+
+✅ STEP 1 — Log In to the AWS Console
+
+Use the provided:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Open the EC2 Dashboard
+
+In the AWS search bar, type EC2
+
+Click EC2 to open the dashboard
+
+✅ STEP 3 — Go to the Volumes Section
+
+From the left side panel:
+
+Elastic Block Store → Volumes
+
+
+Find the volume:
+
+Name: datacenter-vol
+
+✅ STEP 4 — Create the Snapshot
+
+Select the checkbox for datacenter-vol
+
+Click:
+
+Actions → Create snapshot
+
+
+In the popup window, set:
+
+Name: datacenter-vol-ss
+
+Description: datacenter Snapshot
+
+Volume ID will already be auto-filled
+
+Click Create snapshot
+
+You will receive a confirmation that the snapshot is being created.
+
+✅ STEP 5 — Verify the Snapshot Status
+
+In the left panel, click:
+
+Elastic Block Store → Snapshots
+
+
+Locate the snapshot named:
+
+datacenter-vol-ss
+
+
+Check the Status column:
+
+Initially: pending
+
+After several seconds/minutes: completed
+
+Wait until the status becomes completed.
+
+✔️ Task Completed When
+
+Snapshot name = datacenter-vol-ss
+
+Description = datacenter Snapshot
+
+Snapshot status = completed
