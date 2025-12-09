@@ -1,0 +1,97 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow these steps carefully:
+
+✅ STEP 1 — Log In to AWS Console
+
+Use:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Open the S3 Console
+
+In the AWS search bar → type S3
+
+Click S3
+
+✅ STEP 3 — Create a New Bucket
+
+Click the Create bucket button.
+
+✅ STEP 4 — Bucket Configuration
+A) Bucket Name
+
+Enter:
+
+nautilus-s3-22272
+
+B) Region
+
+Choose:
+
+us-east-1 (N. Virginia)
+
+C) Disable Block Public Access (Important for Public Bucket)
+
+Find the Block Public Access section and uncheck:
+
+✔ Block all public access
+✔ Block public ACLs
+✔ Block public bucket policies
+✔ Block new public ACLs and policies
+
+AWS will show a warning message.
+
+You must check the acknowledgment box:
+
+I acknowledge that the current settings might result in this bucket and the objects within becoming public.
+
+
+This allows the bucket to be public.
+
+D) Leave other settings default
+
+Versioning → Off
+
+Encryption → Default
+
+Tags → Optional
+
+✅ STEP 5 — Create the Bucket
+
+Scroll down and click:
+
+Create bucket
+
+📝 STEP 6 — Verify Bucket Is Public
+
+Go to the bucket list and confirm:
+
+Under “Public access” column → it should show Objects can be public
+
+Then:
+
+Click the bucket name
+
+Go to the Permissions tab
+
+Confirm:
+
+Block all public access: OFF
+
+
+This means the bucket is allowed to be public.
+
+✔️ Task Completed When
+
+The bucket nautilus-s3-22272 exists
+
+Block Public Access is disabled
+
+AWS shows the bucket can be public
