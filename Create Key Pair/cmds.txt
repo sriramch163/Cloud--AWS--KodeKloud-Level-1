@@ -1,0 +1,7 @@
+showcreds
+aws ec2 create-key-pair \
+    --region us-east-1 \
+    --key-name devops-kp \
+    --key-type rsa \
+    --query "KeyMaterial" \
+    --output text > devops-kp.pem
