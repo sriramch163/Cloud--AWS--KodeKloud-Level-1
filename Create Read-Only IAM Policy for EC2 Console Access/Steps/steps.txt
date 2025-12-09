@@ -1,0 +1,91 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow these steps in the AWS Management Console:
+
+✅ STEP 1 — Log In to AWS Console
+
+Use:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Open IAM Service
+
+In the AWS search bar, type IAM
+
+Click IAM to open the IAM dashboard
+
+✅ STEP 3 — Create a New IAM Policy
+
+In the left menu, click:
+
+Access management → Policies
+
+
+Click the Create policy button
+
+✅ STEP 4 — Switch to the JSON Editor
+
+At the top, click the JSON tab.
+
+Delete everything inside and paste the following EC2 Read-Only policy:
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "ec2:Describe*"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+
+✔ This policy allows:
+
+Viewing EC2 Instances
+
+Viewing AMIs
+
+Viewing Snapshots
+
+Viewing Volumes, Key Pairs, Security Groups, etc.
+
+No write actions allowed
+
+✅ STEP 5 — Review and Name the Policy
+
+Click Next
+
+On the review page:
+
+Policy name: iampolicy_javed
+
+Description (optional): EC2 Read-only access
+
+Click Create policy
+
+✅ STEP 6 — Verify the Policy
+
+In the list under IAM → Policies, search for:
+
+iampolicy_javed
+
+
+Make sure it appears and shows Created successfully.
+
+✔️ Task Completed When
+
+IAM policy name = iampolicy_javed
+
+Policy includes read-only EC2 permissions
+
+Policy status shows Active
