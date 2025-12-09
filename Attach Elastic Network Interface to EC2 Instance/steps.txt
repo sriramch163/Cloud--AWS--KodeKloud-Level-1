@@ -1,0 +1,73 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow these steps in the AWS Management Console:
+
+✅ STEP 1 — Log In to AWS Console
+
+Use:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Open the EC2 Dashboard
+
+Type EC2 in the AWS search bar.
+
+Click EC2.
+
+✅ STEP 3 — Open Network Interfaces
+
+From the left-side menu:
+
+Network & Security → Network Interfaces
+
+
+You will see the ENI list.
+
+Look for:
+
+Name: datacenter-eni
+
+✅ STEP 4 — Attach the ENI to the EC2 Instance
+
+Select the checkbox of datacenter-eni
+
+Click:
+
+Actions → Attach
+
+
+A popup will appear:
+
+Instance: Select datacenter-ec2
+
+Device index: Usually defaults to 1 (this is correct)
+
+Click Attach
+
+✅ STEP 5 — Verify the ENI Is Attached
+
+After attaching:
+
+The Status column for datacenter-eni should show:
+
+attached
+
+
+You can also click the ENI and check:
+
+Attachment status: attached
+Attached to instance: datacenter-ec2
+
+✔️ Task Completed When
+
+datacenter-eni shows attached
+
+Attached instance = datacenter-ec2
+
+No errors or initializing state
