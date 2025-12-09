@@ -1,0 +1,56 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow the steps below in the AWS Management Console:
+
+✅ STEP 1 — Log In to AWS Console
+
+Use:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Open IAM Service
+
+In the AWS search bar, type IAM
+
+Click IAM to open the IAM dashboard
+
+✅ STEP 3 — Navigate to IAM Groups
+
+From the left-hand menu:
+
+Access management → User groups
+
+✅ STEP 4 — Create a New Group
+
+Click the Create group button
+
+In the Group name field, enter:
+
+iamgroup_kareem
+
+
+Skip attaching permissions (unless required, but not requested here)
+
+Scroll down and click Create group
+
+✅ STEP 5 — Verify the Group Creation
+
+You should now see:
+
+iamgroup_kareem
+Status: Created successfully
+
+
+Confirmed in the list under User groups.
+
+✔️ Task Completed When
+
+IAM Group iamgroup_kareem appears in the IAM → User groups list
+
+The creation completes without any errors
