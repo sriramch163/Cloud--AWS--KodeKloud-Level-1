@@ -1,0 +1,91 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow the steps below to delete the IAM group.
+
+✅ STEP 1 — Log In to AWS Console
+
+Use the provided:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Open IAM Service
+
+In the AWS search bar, type IAM
+
+Click IAM to open the IAM dashboard
+
+✅ STEP 3 — Go to User Groups
+
+Left side menu →
+
+Access management → User groups
+
+
+You will see a list of IAM groups.
+
+✅ STEP 4 — Select the Group to Delete
+
+Find the group:
+
+iamgroup_rose
+
+
+Click on the group name.
+
+⚠️ IMPORTANT: Remove Users & Policies Before Deletion
+
+IAM does not allow deleting a group if:
+
+Any users are part of the group
+
+Any policies are attached
+
+So, check the following:
+
+A) Remove Users from the Group (if any)
+
+Go to the Users tab inside the group
+
+If there are users, click Remove user for each one
+
+B) Detach Policies (if any)
+
+Go to the Permissions tab
+
+If any policies are attached, click Remove policy
+
+Once the group is empty → you can delete it.
+
+✅ STEP 5 — Delete the Group
+
+At the top-right corner of the group page, click:
+
+Delete group
+
+
+Confirm the deletion in the popup message.
+
+📝 STEP 6 — Confirm Deletion
+
+After deleting:
+
+Go back to IAM → User groups
+
+Search for:
+
+iamgroup_rose
+
+
+It should no longer appear in the list.
+
+✔️ Task Completed When
+
+Group iamgroup_rose is removed from IAM
+
+No users or policies remain inside the group before deletion
