@@ -1,0 +1,79 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow these steps in the AWS Management Console:
+
+✅ STEP 1 — Log In to AWS Console
+
+Use:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Navigate to EC2 Dashboard
+
+Search for EC2 in the AWS search bar.
+
+Click EC2.
+
+✅ STEP 3 — Open the Volumes Section
+
+Left menu → under Elastic Block Store, click:
+
+Volumes
+
+
+Find the volume named:
+
+xfusion-volume
+
+✅ STEP 4 — Attach the Volume
+
+Select the checkbox for xfusion-volume.
+
+Click:
+
+Actions → Attach volume
+
+
+A popup window will appear.
+
+✅ STEP 5 — Configure Attachment Settings
+
+In the popup:
+
+Instance: Select xfusion-ec2
+
+Device name: Enter /dev/sdb
+
+✔ It is important to manually type /dev/sdb because AWS may auto-fill a different value.
+
+✅ STEP 6 — Click “Attach Volume”
+
+This will attach the EBS volume to the selected EC2 instance.
+
+✅ STEP 7 — Verify Attachment
+
+Go back to the Volumes list and ensure:
+
+Volume xfusion-volume
+
+State: in-use
+
+Attached to: xfusion-ec2
+
+Device: /dev/sdb
+
+You can also verify by selecting the volume and looking at Attachments information.
+
+✔️ Task Completed When
+
+The volume is attached
+
+The instance shows attachment for /dev/sdb
+
+Volume status is in-use
