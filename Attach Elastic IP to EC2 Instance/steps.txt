@@ -1,0 +1,70 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow these steps exactly in the AWS Management Console:
+
+✅ STEP 1 — Log In to AWS Console
+
+Use the given:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Open EC2 Dashboard
+
+In the AWS search bar, type EC2.
+
+Select EC2 → opens EC2 Dashboard.
+
+✅ STEP 3 — Find the Elastic IP
+
+In the left panel, click Elastic IPs (under Network & Security).
+
+Look for the Elastic IP named:
+
+datacenter-ec2-eip
+
+
+Select the Elastic IP checkbox.
+
+✅ STEP 4 — Associate the Elastic IP With the EC2 Instance
+
+With the Elastic IP selected → click:
+
+Actions → Associate Elastic IP address
+
+
+In the popup:
+
+Resource type: Instance
+
+Instance: Select datacenter-ec2
+
+Private IP: Select the default one (usually pre-filled)
+
+Click Associate
+
+✅ STEP 5 — Verify the Association
+
+Go to Instances in the left menu.
+
+Click the instance datacenter-ec2.
+
+Under the Details tab, you should now see:
+
+Elastic IP: <Your EIP address>
+
+
+This confirms the Elastic IP is successfully attached.
+
+✔️ Task Completion Check
+
+You are done when:
+
+datacenter-ec2 shows the Elastic IP in its Public IPv4 address field.
+
+The Elastic IP resource shows Associated in its status.
