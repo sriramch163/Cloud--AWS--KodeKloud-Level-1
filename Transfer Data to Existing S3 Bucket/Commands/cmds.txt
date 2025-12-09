@@ -1,0 +1,3 @@
+ls -l /tmp/datacenter.txt
+aws s3 cp /tmp/datacenter.txt s3://datacenter-cp-12657/
+aws s3 ls s3://datacenter-cp-12657/
