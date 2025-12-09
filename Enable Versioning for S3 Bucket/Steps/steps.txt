@@ -1,0 +1,58 @@
+🖥️ Steps to Complete the Task Using AWS Console (UI)
+
+Follow these steps in your AWS Management Console:
+
+✅ STEP 1 — Log In to AWS Console
+
+Use:
+
+Console URL
+
+Username
+
+Password
+
+Region: us-east-1
+
+✅ STEP 2 — Navigate to S3
+
+In the AWS search bar → type S3
+
+Click S3 to open the S3 service dashboard
+
+✅ STEP 3 — Open the Bucket
+
+From the list of buckets, click:
+
+nautilus-s3-23994
+
+
+This opens the bucket details page.
+
+✅ STEP 4 — Enable Versioning
+
+Click the Properties tab (top section of the bucket page)
+
+Scroll down to find the Bucket Versioning section
+
+Click the Edit button
+
+Select:
+
+Enable
+
+
+Click Save changes
+
+📝 STEP 5 — Verify Versioning
+
+Still under the Properties tab, confirm that the Versioning section now shows:
+
+Status: Enabled
+
+
+This confirms that versioning has been successfully activated.
+
+✔️ Task Completed When
+
+S3 bucket nautilus-s3-23994 has Versioning: Enabled under bucket properties
