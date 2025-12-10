@@ -1,0 +1,65 @@
+Steps to Complete the Task Using the AWS Console
+
+Follow the steps carefully.
+
+Step 1: Log in to the AWS Console
+
+Open the provided sign-in URL.
+
+Use the username and password given in the task details.
+
+After logging in, ensure the region is set to:
+N. Virginia (us-east-1).
+
+Step 2: Navigate to the VPC Dashboard
+
+In the AWS console search bar, type VPC.
+
+Select VPC from the Services list.
+
+Step 3: Start Creating a New VPC
+
+On the left-hand side menu, select Your VPCs.
+
+Click Create VPC.
+
+Step 4: Enter VPC Configuration
+
+On the Create VPC page:
+
+Resource type: Choose VPC only.
+
+Name tag: Enter
+datacenter-vpc
+
+IPv4 CIDR block: Enter any valid block. Example:
+10.0.0.0/16
+
+Keep all other settings at default (unless the task specifies otherwise).
+
+Step 5: Create the VPC
+
+Scroll down and click Create VPC.
+
+Wait for the confirmation message: VPC successfully created.
+
+Step 6: Validate the VPC
+
+Return to Your VPCs.
+
+Verify that:
+
+The VPC name is datacenter-vpc.
+
+The region is us-east-1.
+
+The CIDR block matches what you entered.
+
+The VPC State is Available.
+
+Completion Checklist
+Requirement	Status
+VPC created in us-east-1	Must be confirmed
+VPC name: datacenter-vpc	Must exist
+IPv4 CIDR: any valid block	Must be set
+VPC status: Available	Must be verified
