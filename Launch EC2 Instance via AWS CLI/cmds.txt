@@ -1,0 +1,16 @@
+ls
+aws ec2 create-key-pair \
+    --key-name devops-kp \
+    --key-type rsa \
+    --query "KeyMaterial" \
+    --output text > devops-kp.pem
+aws ec2 run-instances \
+    --image-id ami-0cd59ecaf368e5ccf \
+    --instance-type t2.micro \
+    --key-name devops-kp \
+    --security-groups default \
+    --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=devops-ec2}]'
+aws ec2 describe-instances \
+    --filters "Name=tag:Name,Values=devops-ec2" \
+    --query "Reservations[].Instances[].State.Name" \
+    --output text
