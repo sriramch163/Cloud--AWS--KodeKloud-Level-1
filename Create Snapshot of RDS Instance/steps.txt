@@ -1,0 +1,67 @@
+Steps to Complete the Task in AWS Console (UI)
+
+Follow these steps precisely:
+
+STEP 1 — Log in to the AWS Console
+
+Open the URL provided:
+https://249486937402.signin.aws.amazon.com/console?region=us-east-1
+
+Enter the credentials:
+
+Username: kk_labs_user_256684
+
+Password: L@seCu!UcGY6
+
+Ensure the region at the top-right corner is set to N. Virginia (us-east-1).
+
+STEP 2 — Navigate to the RDS Service
+
+In the AWS console search bar, type RDS.
+
+Click on the RDS service to open the dashboard.
+
+STEP 3 — Find the Running RDS Instance
+
+In the left navigation panel, click Databases.
+
+Look for the RDS instance named devops-rds.
+
+Confirm its status is available.
+
+STEP 4 — Take a Manual Snapshot
+
+Select the instance devops-rds by clicking its checkbox.
+
+At the top-right corner, click Actions.
+
+From the dropdown, select Take snapshot.
+
+In the snapshot name field, enter:
+devops-rds-snapshot
+
+Click Take snapshot.
+
+AWS will now begin creating the snapshot.
+
+STEP 5 — Verify Snapshot Creation
+
+In the left menu, click Snapshots.
+
+Locate the snapshot named devops-rds-snapshot.
+
+Initially, the status will show creating.
+
+Wait until the status becomes available.
+
+Once the snapshot is available, the task is successfully completed.
+
+Task Completion Criteria
+
+You have completed the task when:
+
+Snapshot name appears as devops-rds-snapshot.
+
+Snapshot type is Manual.
+
+Status = Available.
