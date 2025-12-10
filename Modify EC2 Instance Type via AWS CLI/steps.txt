@@ -1,0 +1,16 @@
+aws ec2 describe-instances \
+    --filters "Name=tag:Name,Values=xfusion-ec2" \
+    --query "Reservations[].Instances[].InstanceId" \
+    --output text
+aws ec2 stop-instances --instance-ids i-0974975eb63696dc9
+aws ec2 wait instance-stopped --instance-ids i-0974975eb63696dc9
+aws ec2 modify-instance-attribute \
+    --instance-id i-0974975eb63696dc9 \
+    --instance-type "{\"Value\": \"t2.nano\"}"
+aws ec2 start-instances --instance-ids i-0974975eb63696dc9
+aws ec2 wait instance-running --instance-ids i-0974975eb63696dc9
+aws ec2 describe-instances \
+    --instance-ids i-0974975eb63696dc9 \
+    --query "Reservations[].Instances[].State.Name" \
+    --output text
+
