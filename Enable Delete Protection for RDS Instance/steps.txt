@@ -1,0 +1,80 @@
+Steps to Complete the Task in the AWS Console (UI)
+
+Follow these steps exactly:
+
+STEP 1 — Log in to AWS Console
+
+Open the console URL:
+https://667505016156.signin.aws.amazon.com/console?region=us-east-1
+
+Enter the credentials provided:
+
+Username: kk_labs_user_842063
+
+Password: M85x@3fl!06c
+
+Confirm the region (top-right corner) is N. Virginia (us-east-1).
+
+STEP 2 — Navigate to RDS
+
+In the AWS search bar, type RDS.
+
+Select the RDS service to open the dashboard.
+
+STEP 3 — Open the RDS Instance
+
+In the left panel, click Databases.
+
+Locate the instance named xfusion-rds.
+
+Click on the instance name to open its details page.
+
+STEP 4 — Modify the Instance
+
+On the top-right corner, click the Modify button.
+
+STEP 5 — Enable Delete Protection
+
+Scroll down to the Additional configuration or Deletion protection section (location may vary slightly depending on UI updates).
+
+Find the setting "Enable deletion protection".
+
+Check (enable) the box.
+
+This ensures the RDS instance cannot be deleted unless you disable protection later.
+
+STEP 6 — Apply Changes Immediately
+
+Scroll to the bottom of the Modify page.
+
+Under Scheduling of modifications, select:
+
+Apply immediately
+
+Click Continue.
+
+Review the summary.
+
+Click Modify DB Instance.
+
+AWS will update the instance settings.
+
+STEP 7 — Verify the Update
+
+Return to the Configuration tab of the RDS instance.
+
+Confirm:
+
+Deletion protection: Enabled
+
+No pending modifications remain.
+
+Once this is active, the task is complete.
+
+Task Completion Requirements
+
+You are done when:
+
+The instance xfusion-rds shows Deletion Protection = Enabled.
+
+No Pending modifications appear (unless immediately applied).
