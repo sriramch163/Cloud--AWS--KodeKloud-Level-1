@@ -1,0 +1,118 @@
+AWS CONSOLE (UI) STEPS TO COMPLETE THE TASK
+
+Follow these steps exactly:
+
+STEP 1 — Log in to the AWS Console
+
+Open the console URL provided in the lab:
+Example:
+https://701555407324.signin.aws.amazon.com/console?region=us-east-1
+
+Enter the username and password shown in the task:
+
+Username: kk_labs_user_601481
+
+Password: IP@1^v@\!b7id
+
+After logging in, confirm the region in the top-right corner is N. Virginia (us-east-1).
+
+STEP 2 — Navigate to RDS
+
+In the AWS search bar type RDS.
+
+Click RDS under Services to open the RDS dashboard.
+
+STEP 3 — Start Database Creation
+
+Click Create database.
+
+STEP 4 — Select Creation Method
+
+Choose Standard create (default recommended).
+
+STEP 5 — Select Engine
+
+Under Engine options:
+
+Select MySQL
+
+Choose version 8.4.5
+
+Make sure the specific version is correct.
+
+STEP 6 — Select Template
+
+Under Templates, select Free tier.
+
+STEP 7 — Configure Basic Settings
+
+Under the Settings section, fill in:
+
+DB instance identifier: xfusion-rds
+
+Master username: xfusion_admin
+
+Master password: (enter any secure password)
+
+Re-enter the password for confirmation.
+
+STEP 8 — DB Instance Class
+
+Under DB instance class:
+
+Choose Burstable classes (t classes)
+
+Select db.t3.micro
+
+STEP 9 — Configure Storage
+
+Storage type: gp2
+
+Allocated storage: 5 GiB
+
+Storage autoscaling: leave default (OFF unless required — the lab says default).
+
+STEP 10 — Configure Connectivity
+
+Scroll to Connectivity:
+
+Public access: Select Yes
+(Critical requirement)
+
+VPC, Subnet group, and security group: leave default.
+
+Do NOT change port or additional parameters.
+
+STEP 11 — Additional Configuration
+
+Leave everything as default except what the task mandates.
+
+No need to enable backups, monitoring, or enhanced logs.
+
+STEP 12 — Create the Database
+
+Scroll to the bottom.
+
+Click Create database.
+
+AWS will redirect you to the DB list.
+
+STEP 13 — Verify Status
+
+Locate the instance named xfusion-rds.
+
+Status will show Creating.
+
+Wait until status becomes Available.
+
+This may take 3–6 minutes.
+
+Task Completion Criteria
+
+You have successfully completed the task when:
+
+The RDS instance xfusion-rds appears in the list.
+
+All configurations match the specification.
+
+The status is Available.
