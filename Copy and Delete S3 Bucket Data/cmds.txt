@@ -1,0 +1,5 @@
+aws s3 cp s3://xfusion-bck-29070/ /opt/ --recursive
+ls -l /opt
+aws s3 rm s3://xfusion-bck-29070 --recursive
+aws s3 rb s3://xfusion-bck-29070
+ls -l /opt
