@@ -1,0 +1,10 @@
+aws ec2 describe-instances \
+    --filters "Name=tag:Name,Values=nautilus-ec2" \
+    --query "Reservations[].Instances[].InstanceId" \
+    --output text
+aws ec2 terminate-instances --instance-ids i-001aa0898c475fd70
+aws ec2 wait instance-terminated --instance-ids i-001aa0898c475fd70
+aws ec2 describe-instances \
+    --instance-ids i-001aa0898c475fd70 \
+    --query "Reservations[].Instances[].State.Name" \
+    --output text
