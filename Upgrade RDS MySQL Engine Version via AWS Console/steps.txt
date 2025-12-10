@@ -1,0 +1,78 @@
+AWS Console (UI) Steps to Complete the Task
+
+Follow these steps carefully:
+
+STEP 1 — Log in to the AWS Console
+
+Open the console URL:
+https://299640718677.signin.aws.amazon.com/console?region=us-east-1
+
+Log in using:
+
+Username: kk_labs_user_607760
+
+Password: de%abBLpjo6l^
+
+Confirm the region is N. Virginia (us-east-1).
+
+STEP 2 — Navigate to RDS
+
+Type RDS in the AWS search bar.
+
+Select RDS to open the database dashboard.
+
+STEP 3 — Select the RDS Instance
+
+In the left panel, click Databases.
+
+Locate the instance: xfusion-rds.
+
+Click the instance name to open its details page.
+
+STEP 4 — Start the Engine Upgrade
+
+Click the Modify button (top-right).
+
+STEP 5 — Change the Engine Version
+
+Find the section DB Engine Version.
+
+Open the dropdown list.
+
+Select MySQL 8.4.5 (the latest version required).
+
+Ensure no other parameters are changed.
+
+STEP 6 — Apply Changes Immediately
+
+Scroll down to Scheduling of Modifications.
+
+Select Apply Immediately.
+
+Click Continue.
+
+Review the summary.
+
+Click Modify DB Instance.
+
+AWS will start the upgrade process.
+
+STEP 7 — Verify Upgrade Completion
+
+Return to the Databases page.
+
+The instance xfusion-rds will show status Modifying.
+
+Wait until it returns to Available.
+
+Confirm the Engine version now displays 8.4.5.
+
+Task Completion Criteria
+
+The task is successfully completed when:
+
+Engine version for xfusion-rds shows 8.4.5.
+
+Instance status returns to Available.
+
+No pending modifications remain.
