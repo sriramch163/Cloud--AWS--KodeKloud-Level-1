@@ -1,0 +1,122 @@
+Steps to Delete the VPC Using AWS Console
+
+Perform the steps carefully, as VPC deletion has dependencies.
+
+Step 1: Log in to AWS Console
+
+Open the provided Console URL.
+
+Enter the username and password.
+
+Confirm the region is set to:
+N. Virginia (us-east-1).
+
+Step 2: Navigate to the VPC Dashboard
+
+In the AWS search bar, type VPC.
+
+Select VPC from the services list.
+
+Step 3: Identify the VPC
+
+Click Your VPCs from the left panel.
+
+Locate the VPC named:
+datacenter-vpc.
+
+Note the VPC ID, as it will help identify associated components.
+
+Before You Can Delete the VPC: Remove All Dependencies
+
+AWS will not permit deleting a VPC unless the following items are deleted or detached.
+
+Follow these sub-steps in order.
+
+Step 4: Delete Subnets
+
+On the left menu, click Subnets.
+
+Filter using the VPC ID from datacenter-vpc.
+
+Select each subnet associated with this VPC.
+
+Click Actions → Delete subnet.
+
+Step 5: Detach and Delete the Internet Gateway
+
+On the left panel, select Internet gateways.
+
+Locate any IGW attached to this VPC.
+
+Select it → Actions → Detach from VPC.
+
+Then delete it → Actions → Delete internet gateway.
+
+Step 6: Delete Route Tables
+
+On the left, select Route tables.
+
+Filter by the VPC ID.
+
+You cannot delete the main route table, but delete all custom ones:
+
+Select route table → Actions → Delete route table.
+
+(Main route table will be deleted automatically when VPC is deleted.)
+
+Step 7: Delete Security Groups
+
+Select Security groups in the left menu.
+
+Filter by the VPC ID.
+
+Delete any security group except the default one.
+
+The default security group will be removed automatically on VPC deletion.
+
+Step 8: Delete Network ACLs (if any custom ones exist)
+
+Select Network ACLs.
+
+Filter by VPC ID.
+
+Delete any custom NACLs.
+
+(Default NACL is removed automatically with the VPC.)
+
+Step 9: Delete any Additional Attached Resources
+
+Only apply if they exist:
+
+NAT Gateways
+(Delete them; wait for status to become “Deleted.”)
+
+Elastic IPs
+(Release them)
+
+Endpoints
+(Delete them)
+
+Finally: Delete the VPC
+Step 10: Delete datacenter-vpc
+
+Go to Your VPCs.
+
+Select the VPC named datacenter-vpc.
+
+Click Actions → Delete VPC.
+
+Confirm deletion in the popup window.
+
+AWS will permanently delete the VPC and any remaining default components.
+
+Completion Checklist
+Requirement	Status
+Region is us-east-1	Must confirm
+VPC name deleted: datacenter-vpc	Must be true
+All subnets removed	Required
+IGW detached + deleted	Required
+Route tables cleaned	Required
+Security groups (custom) deleted	Required
+No NAT/Endpoints blocking deletion	Required
+Final VPC deletion successful	Required
