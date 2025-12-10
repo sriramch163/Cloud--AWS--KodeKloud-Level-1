@@ -1,0 +1,71 @@
+Steps to Complete the Task Using AWS Console
+
+Follow these steps exactly in the AWS Management Console.
+
+Step 1: Log in to the AWS Console
+
+Open the provided Console URL.
+
+Enter the provided username and password.
+
+After login, ensure the region is set to us-east-1 (N. Virginia).
+
+Step 2: Navigate to the RDS Dashboard
+
+In the AWS console search bar, type RDS.
+
+Select RDS from the services list.
+
+On the left panel, select Databases.
+
+Step 3: Locate the RDS Instance
+
+In the list of RDS databases, find the instance named devops-rds.
+
+Click the checkbox next to it, or click on the instance name.
+
+Step 4: Initiate RDS Deletion
+
+Click the Actions dropdown.
+
+Select Delete.
+
+Step 5: Configure Deletion Options
+
+A confirmation page will appear with deletion settings.
+
+Perform the following:
+
+Uncheck:
+
+“Create final snapshot before deletion”
+(Snapshots cost money; therefore disabled in cleanup tasks.)
+
+Check:
+
+“Acknowledge that automated backups will also be deleted.”
+
+Type delete me (or the required confirmation phrase).
+
+Step 6: Confirm Deletion
+
+Click Delete.
+
+The instance status will change to Deleting.
+
+Step 7: Verify Completion
+
+Wait until the instance disappears from the “Databases” list, or its status becomes Deleted.
+
+Ensure no related snapshots remain under:
+
+Snapshots → Manual Snapshots
+
+Snapshots → Automated Snapshots
+
+Task Completion Checklist
+Requirement	Status
+Deleted RDS instance named devops-rds	Must be completed
+Region used: us-east-1	Must be confirmed
+No final snapshot created	Must be ensured
+Automated backups acknowledged	Must be confirmed
