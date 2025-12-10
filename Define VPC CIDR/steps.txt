@@ -1,0 +1,73 @@
+Steps to Complete the Task Using the AWS Console
+
+Follow the steps in sequence to avoid configuration errors.
+
+Step 1: Log in to AWS Console
+
+Open the Console URL provided in the task.
+
+Enter the username and password given.
+
+Confirm that the region in the top-right corner is:
+N. Virginia (us-east-1).
+
+Step 2: Navigate to the VPC Dashboard
+
+In the AWS console search bar, type VPC.
+
+Click on the VPC service.
+
+Step 3: Begin Creating a VPC
+
+On the left menu, select Your VPCs.
+
+Click the Create VPC button.
+
+Step 4: Enter VPC Details
+
+On the "Create VPC" page, configure the following:
+
+Resource type:
+Select VPC only.
+
+Name tag:
+Enter
+xfusion-vpc
+
+IPv4 CIDR block:
+Enter
+192.168.0.0/24
+
+Leave IPv6 CIDR and tenancy settings at their defaults unless otherwise instructed.
+
+Step 5: Create the VPC
+
+Scroll to the bottom of the page.
+
+Click Create VPC.
+
+Wait for the confirmation message:
+"VPC successfully created".
+
+Step 6: Validate the VPC
+
+Return to Your VPCs.
+
+Verify:
+
+VPC name = xfusion-vpc
+
+IPv4 CIDR = 192.168.0.0/24
+
+Region = us-east-1
+
+State = Available
+
+This confirms that the VPC has been properly configured.
+
+Completion Checklist
+Item	Expected	Must Verify
+VPC Name	xfusion-vpc	Yes
+Region	us-east-1	Yes
+IPv4 CIDR	192.168.0.0/24	Yes
+VPC State	Available	Yes
